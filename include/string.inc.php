@@ -22,4 +22,11 @@
         }
         return $str;
     }
+    function removeExtraBlanks($str)
+    {
+        $space = '_';
+        $str = preg_replace("/\\s+/", " ", $str); 
+        $str = trim($str); 
+        return $str;
+    }
     
